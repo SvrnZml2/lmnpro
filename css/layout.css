@@ -9572,10 +9572,10 @@ button.post-comment:hover {
 }
 
 .parallax-5 {
-	background: url('../images/footer.jpg') repeat fixed;
+	background: url('../images/footer.png') repeat fixed;
 	background-size: cover;
 	position: absolute;
-	opacity: .4;
+	opacity: .;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -10652,6 +10652,7 @@ button.post-comment:hover {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	margin-top: 35px;
 }
 
 .footer-down p {
@@ -10659,12 +10660,13 @@ button.post-comment:hover {
 	font-size: 11px;
 	letter-spacing: 3px;
 	font-weight: 600;
-	color: #000000;
+	color: #ffffff;
 	text-align: center;
 }
 
 .footer-down a {
-	color: #000000;
+	color: #ffffff;
+	transition: all 0.25s ease-in-out;
 }
 
 .footer-down a:hover {
@@ -13311,9 +13313,7 @@ main {
 		flex-direction: column;
 		align-items: center;
 	}
-	.adress {
-		font-size: 14px;
-	}
+	
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
@@ -13449,4 +13449,27 @@ main {
 	width: 5%;
 	position: relative;
 	top: 0;
+}
+
+/*==================================Social icons==============================*/
+
+.social{
+	display: flex;
+	width: 20%;
+	justify-content: space-around;
+}
+
+.fab{
+	color: rgb(255, 255, 255);
+	margin-top: 60px;
+	transition: all 0.25s ease-in-out; 
+	
+}
+
+.fab:hover{
+	color: #e53775;
+}
+
+.footer-wrap-1 .adress p{
+	color: white;
 }
