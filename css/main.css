@@ -9575,7 +9575,7 @@ button.post-comment:hover {
 	background: url('../images/footer.png') repeat fixed;
 	background-size: cover;
 	position: absolute;
-	opacity: .;
+	opacity: .8;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -13317,6 +13317,7 @@ main {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+	
 	.footer-wrap-1 {
 		display: flex;
 		flex-direction: column;
@@ -13372,6 +13373,9 @@ main {
 }
 
 @media only screen and (max-width: 319px) {
+	.social{
+		width:150%;
+	}
 	.footer-wrap-1 {
 		display: flex;
 		flex-direction: column;
@@ -13472,4 +13476,14 @@ main {
 
 .footer-wrap-1 .adress p{
 	color: white;
+}
+
+/*====================================Contact========================*/
+
+.error{
+	color: red;
+}
+
+#ajaxsuccess{
+	color: #e53775;
 }

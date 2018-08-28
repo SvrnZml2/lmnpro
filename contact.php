@@ -1,14 +1,10 @@
 <?php
+/* Gestion du formulaire de contact */
 
-/* Code by David McKeown - craftedbydavid.com */
-/* Editable entries are bellow */
-
-$send_to = "mail@server.com";
-$send_subject = "Ajax form ";
+$send_to = "rossi56@hotmail.fr";
+$send_subject = "Message contact Luminis Prod";
 
 
-
-/*Be careful when editing below this line */
 
 $f_name = cleanupentries($_POST["name"]);
 $f_email = cleanupentries($_POST["email"]);
@@ -24,11 +20,11 @@ function cleanupentries($entry) {
 	return $entry;
 }
 
-$message = "This email was submitted on " . date('m-d-Y') . 
-"\n\nName: " . $f_name . 
-"\n\nE-Mail: " . $f_email . 
+$message = "Ce mail a été transmis le " . date('d-m-Y') . 
+"\n\nNom de l'expéditeur: " . $f_name . 
+"\n\nE-Mail de l'expéditeur: " . $f_email . 
 "\n\nMessage: \n" . $f_message . 
-"\n\n\nTechnical Details:\n" . $from_ip . "\n" . $from_browser;
+"\n\n\nDétails technique du mail reçu:\n" . $from_ip . "\n" . $from_browser;
 
 $send_subject .= " - {$f_name}";
 
@@ -37,17 +33,17 @@ $headers = "From: " . $f_email . "\r\n" .
     "X-Mailer: PHP/" . phpversion();
 
 if (!$f_email) {
-	echo "no email";
+	echo "Aucun E-mail";
 	exit;
 }else if (!$f_name){
-	echo "no name";
+	echo "Aucun Nom";
 	exit;
 }else{
 	if (filter_var($f_email, FILTER_VALIDATE_EMAIL)) {
 		mail($send_to, $send_subject, $message, $headers);
 		echo "true";
 	}else{
-		echo "invalid email";
+		echo "E-mail invalide !";
 		exit;
 	}
 }
