@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".close-menu, .burger").click(function(){$(".close-menu").toggleClass("closed"),$(".menu").toggleClass("nav-mobil"),$(".burger").toggleClass("active")})});

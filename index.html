@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<title>Luminis Prod</title>
 	<meta name="description" content="Agence de production audiovisuelle à Vannes, Morbihan, Bretagne. Spécialisée dans la vidéo et le montage, mon objectif est de rendre visible toutes vos envies et besoins en vous accompagnant dans vos événements et projets. Quel que soit le type de film à réaliser, je le fais avec une véritable passion et n’hésite pas à me déplacer dans tout le Morbihan.">
-	<meta name="keywords" lang="fr-FR" content="Agence, vidéo, production, vannes, morbihan, warp-code, vidéos de mariage, vidéos évènementielles, clips vidéos">
+	<meta name="keywords" lang="fr-FR" content="Agence, vidéo, production, vannes, morbihan, warp-code, vidéos de mariage, vidéos évènementielles, clips vidéos, réalisations de vidéos, montages vidéos">
 	<meta name="author" content="WARP CODE">
 	<meta name="category" content="production audiovisuelle">
 	<meta name="reply-to" content="">
@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="css/style-dist.css" />
 	<link rel="stylesheet" href="css/grid-dist.css" />
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/animsition-dist.min.css" />
+	<link rel="stylesheet" href="css/animsition.min.css" />
 	<link rel="stylesheet" href="css/font-awesome-dist.css" />
 	<link rel="stylesheet" href="css/ionicons-dist.css" />
 	<link rel="stylesheet" href="css/simple-line-icons-dist.css" />
@@ -74,46 +74,30 @@
 
 		<!-- menu -->
 
-		<nav class="section-menu-fixed cbp-af-header dark-menu-background menu-section floating-menu">
-			<div class="container dark-background">
-				<div class="twelve columns">
-
-					<div class="logo-wrap" id="accueil">
+		
+		<nav class="menu">
+				<div class="logo-wrap" >
 						<a href="index.html" class="animsition-link">
-							<img src="images/logo-2.png" alt="logo" />
+							<img class="logo" src="images/logo-2.png" alt="logo" />
 						</a>
 					</div>
-
-					<ul class="sky-mega-menu sky-mega-menu-anim-scale sky-mega-menu-response-to-switcher">
-
-						<!-- switcher -->
-						<li class="switcher">
-							<a href="#">
-								<i class="fas fa-bars"></i>
-							</a>
-						</li>
-						<!--/ switcher -->
-
-						<li aria-haspopup="true" class="right left ">
-							<a href="#home">Accueil</a>
-						</li>
-						<li aria-haspopup="true" class="right left">
-							<a href="#services">Services</a>
-						</li>
-						<li aria-haspopup="true" class="right left">
-							<a href="#portfolio">Portfolio</a>
-						</li>
-						<li aria-haspopup="true" class="right left">
-							<a href="#tarifs">Tarifs</a>
-						</li>
-						<li aria-haspopup="true" class="right left">
-							<a href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+			<ul>
+				<li ><a class="hvr-overline-from-center close-menu" href="#home">Accueil</a></li>
+				<li ><a class="hvr-overline-from-center close-menu" href="#services">Services</a></li>
+				<li ><a class="hvr-overline-from-center close-menu" href="#portfolio">Portfolio</a></li>
+				<li ><a class="hvr-overline-from-center close-menu" href="#tarifs">Tarifs</a></li>
+				<li ><a class="hvr-overline-from-center close-menu" href="#contact">Contact</a></li>
+			</ul>
 		</nav>
-
+		
+		<div class="burger">
+			<svg width="100px" height="100px">
+				<path class="top" d="M 30 40 L 70 40 C 90 40 90 75 60 85 A 40 40 0 0 1 20 20 L 80 80"></path>
+				<path class="middle" d="M 30 50 L 70 50"></path>
+				<path class="bottom" d="M 70 60 L 30 60 C 10 60 10 20 40 15 A 40 38 0 1 1 20 80 L 80 20"></path>
+			</svg>
+		</div>
+		<div class="mask3"></div>
 		<!--Fin menu -->
 		<div id="home"></div>
 		<div class="section full-height">
@@ -230,9 +214,12 @@
 				</div>
 				<div class="four columns">
 					<div class="services-box-2">
-						<img src="images/services-1.jpg" alt="" />
+							<figure class="credits-photo">
+									<img src="images/services-1.jpg" alt="service1" />
+									<figcaption>Crédit photo: Stéphane Bouvier</figcaption>
+							</figure>
 						<div class="number">01.</div>
-						<h6>Montage vidéo</h6>
+						<h6>Proximité</h6>
 						<div class="subtext">Mon objectif est de rendre visible toutes vos envies et besoins en vous accompagnant dans vos événements et projets.
 							Quel que soit le type de film à réaliser, je le fais avec une véritable passion et n’hésite pas à me déplacer dans
 							tout le Morbihan.</div>
@@ -240,7 +227,10 @@
 				</div>
 				<div class="four columns">
 					<div class="services-box-2">
-						<img src="images/services-2.jpg" alt="" />
+						<figure class="credits-photo">
+								<img src="images/services-2.jpg" alt="service2" />
+								<figcaption><a href="http://www.saraphotographie.com/">Crédit photo: Saraphotographie</a></figcaption>
+						</figure>
 						<div class="number">02.</div>
 						<h6>Personnalisation</h6>
 						<div class="subtext">Je suis la partenaire idéale pour réaliser un film personnalisé, unique, créatif et répondant à vos attentes. Je prends
@@ -250,9 +240,12 @@
 				</div>
 				<div class="four columns">
 					<div class="services-box-2">
-						<img src="images/services-3.jpg" alt="" />
+							<figure class="credits-photo">
+									<img src="images/services-3.jpg" alt="service3" />
+									<figcaption><a href="http://www.saraphotographie.com/">Crédit photo: Saraphotographie</a></figcaption>
+							</figure>
 						<div class="number">03.</div>
-						<h6>Authentique</h6>
+						<h6>Authenticité</h6>
 						<div class="subtext">Mon style est authentique, je travaille de façon très discrète afin de ne pas vous gêner, avec la recherche constante
 							de capter les émotions sur le vif. Je m’implique totalement dans votre projet ce qui permet de réaliser un film à
 							votre image et digne d'une qualité de cinéma.</div>
@@ -314,10 +307,10 @@
 				</div>
 				<div class="three columns">
 					<div class="process-box-1">
-						<img src="images/2.jpg" alt="2" />
+						<img src="images/2.png" alt="2" />
 						<h6>Pré-production</h6>
 						<div class="subtext">Donner vie à vos projets.</div>
-						<p>La pré-production est une étape importante dans la réalisation d'une vidéo. C'est le moment où l'on prépareensembre
+						<p>La pré-production est une étape importante dans la réalisation d'une vidéo. C'est le moment où l'on prépare ensemble
 							votre projet et où j'apprends à mieux vous connaître pour cerner vos envies et besoins, afin de transformer une idée
 							en réalité.
 						</p>
@@ -338,8 +331,8 @@
 						<img src="images/4.jpg" alt="4" />
 						<h6>Post-production</h6>
 						<div class="subtext">Renforcer votre message.</div>
-						<p>Lors de la post-production, je traite la vidéo et révè
-							<legend>tout son potentiel. C'est à ce moment là que je choisis les meilleures prises de Veuillezet la musique, que je réalise
+						<p>Lors de la post-production, je traite la vidéo et révèle
+							<legend>tout son potentiel. C'est à ce moment là que je choisis les meilleures prises de vues et la musique, que je réalise
 								le montage et l'habillage graphique.
 							</legend>
 						</p>
@@ -434,12 +427,12 @@
 				</a>
 				<a href="project-gallery.html" class="animsition-link">
 					<div class="portfolio-wrap-third">
-						<img src="images/elias.png" alt="Elias" style="height:325px;" />
+						<img src="images/mariage2.png" alt="Elias" style="height:325px;" />
 						<div class="mask">
-							<h6>Elias</h6>
-							<p>Court métrage</p>
+							<h6>Nathalie et François</h6>
+							<p>Film de mariage</p>
 							<div class="play-video" style="margin-top:30px;">
-								<a href="https://www.youtube.com/embed/D6_z71xdjq0?autoplay=1" class="fancybox  fancybox.iframe">
+								<a href="https://www.youtube.com/embed/gnZ6qk0FYnk?autoplay=1" class="fancybox  fancybox.iframe">
 									<div class="button icon-control-play"></div>
 								</a>
 							</div>
@@ -508,7 +501,7 @@
 						<div class="text-top dark-background">
 							<div class="name">Pack mariage.</div>
 							<div class="upertext">Formule Passion</div>
-							<img style="width:100%;" src="images/passion.png" alt="">
+							<img style="width:100%;" src="images/passion.png" alt="passion">
 							<div class="price">
 								<span>A partir de</span> 900
 								<span>euros</span>
@@ -644,7 +637,6 @@
 		<article class="section">
 				<div id="map">
 				</div>
-				<div class="mask2"></div>
 	
 			</article>
 		<div class="section padding-top-bottom-small white-footer">
@@ -692,22 +684,20 @@
     ================================================== -->
 	<script type="text/javascript" src="js/jquery-2.1.4-dist.js"></script>
 	<script type="text/javascript" src="js/jquery.animsition.min.js"></script>
-	<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/retina-1.1.0.min-dist.js"></script>
 	<script type="text/javascript" src="js/jquery.easing-dist.js"></script>
 	<script type="text/javascript" src="js/SmoothScroll-dist.js"></script>
 	<script type="text/javascript" src="js/classie-dist.js"></script>
-	<script type="text/javascript" src="js/cbpAnimatedHeader.min.js"></script>
+	<script type="text/javascript" src="js/cbpAnimatedHeader.min-dist.js"></script>
 	<script type="text/javascript" src="js/jquery.parallax-1.1.3-dist.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.pack-dist.js"></script>
-	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.counterup.min-dist.js"></script>
 	<script type="text/javascript" src="js/waypoints.min.js"></script>
 	<script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script>
 	<script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="js/contact.js"></script>
-	<!-- SLIDER REVOLUTION EXTENSIONS  
-(Load Extensions only on Local File Systems !  
-The following part can be removed on Server for On Demand Loading) -->
+	<script type="text/javascript" src="js/contact-dist.js"></script>
+	<!-- SLIDER REVOLUTION EXTENSIONS  -->
 	<script type="text/javascript" src="js/revolution-slider-extensions/revolution.extension.actions.min.js"></script>
 	<script type="text/javascript" src="js/revolution-slider-extensions/revolution.extension.carousel.min.js"></script>
 	<script type="text/javascript" src="js/revolution-slider-extensions/revolution.extension.kenburn.min.js"></script>
@@ -717,12 +707,13 @@ The following part can be removed on Server for On Demand Loading) -->
 	<script type="text/javascript" src="js/revolution-slider-extensions/revolution.extension.parallax.min.js"></script>
 	<script type="text/javascript" src="js/revolution-slider-extensions/revolution.extension.slideanims.min.js"></script>
 	<script type="text/javascript" src="js/revolution-slider-extensions/revolution.extension.video.min.js"></script>
-	<script type="text/javascript" src="js/custom-index.js"></script>
+	<script type="text/javascript" src="js/custom-index-dist.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp9-xyLswGg78nw7blTPXbD11Dnqe46fQ&callback=initMap" async
 	    defer></script>
 	<script type="text/javascript" src="js/map-dist.js"></script>
+	<script src="js/script.js"></script>
 
-	<!-- End Document
+	<!-- End 
 ================================================== -->
 </body>
 
