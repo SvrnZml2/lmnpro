@@ -5664,7 +5664,7 @@ main {
 
 .menu ul {
 	display: flex;
-	justify-content: right;
+	justify-content: flex-end;
 	padding: 20px;
 }
 
