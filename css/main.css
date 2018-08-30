@@ -4234,6 +4234,7 @@ ul.countdown li p {
 
 .footer-wrap-1 img {
 	width: 180px;
+	height: 182px;
 	display: block;
 }
 
@@ -5611,11 +5612,18 @@ main {
 
 /*====================================MAP====================================*/
 #map {
-	height: 500px;
+	height: 650px;
 	width: 100%;
+	border-top: 1px solid rgba(100, 100, 100, .2);
+	border-bottom: 1px solid rgba(100, 100, 100, .2);
+
 }
 
-
+@media all and (max-width: 998px){
+ #map{
+	 height: 450px;
+ }
+}
 
 .logo-map {
 	width: 5%;
