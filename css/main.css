@@ -263,7 +263,7 @@
 }
 
 .split-background-3 {
-	background-image: url('../images/clemence.jpg')
+	background-image: url('../images/technique.png')
 }
 
 .split-left.dark-background .split-text-wrap .title-text-center h5 {
@@ -5844,6 +5844,9 @@ main {
 	opacity: 1;
 	visibility: visible;
 }
+
+
+
 .mask3 {
 	position: fixed;
 	visibility: hidden;
