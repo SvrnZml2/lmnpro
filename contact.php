@@ -1,7 +1,7 @@
 <?php
 /* Gestion du formulaire de contact */
 
-$send_to = "rossi56@hotmail.fr";
+$send_to = "contact@luminisprod.com";
 $send_subject = "Message contact Luminis Prod";
 
 

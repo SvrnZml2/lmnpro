@@ -7,7 +7,14 @@ $(document).ready(function () {
       $('.mask3').toggleClass('closed');
       $('.menu').toggleClass('nav-mobil');
       $('.burger').toggleClass('active');
-      $('.close-menu').toggleClass('exit'); 
+      
+    });
+    $( "li" ).click(function() {
+      
+      $( ".menu" ).removeClass("nav-mobil");
+      $('.mask3').removeClass('closed');
+      $('.burger').removeClass('active');
+
     });
   });
 

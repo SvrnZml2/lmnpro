@@ -5873,5 +5873,110 @@ main {
 	 margin-top: -60px;
  }
 
-
  
+/*=========================================Mentions légales=====================================*/
+main{
+	background: #292929;
+	width: 100%;
+}
+h3{
+	padding: 35px;
+	text-align: center;
+}
+.conditions, .limitations, .limitations, .liens {
+	background: #e5377491;
+	width: 100%;
+	position: relative;
+	padding-bottom: 5%;
+}
+
+.conditions a, .limitations a, .limitations a, .liens a {
+	color: #56ecf8;
+}
+
+.presentation, .gestion, .droit, .description, .propriete{
+	background: #56edf875;
+	width: 100%;
+	position: relative;
+	padding-bottom: 5%;
+}
+.presentation a, .gestion a, .droit a, .description a, .propriete a{
+	color: #e53775;
+}
+
+p{
+	color: #8a8e94;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.mentions{
+	text-align: justify;
+}
+
+.mentions h3, .mentions p{
+	color: white;
+}
+
+.presentation{
+	text-align: center;
+}
+
+.presentation p{
+	color: white;
+}
+
+.loiCnil{
+    color: #e53775;
+}
+
+.loiCnil a:hover{
+	color: #56ecf8; 
+}
+
+.wpc{
+    color: #219bcd;
+}
+
+.mention-footer{
+	color: white;
+}
+
+.mention-footer a:hover{
+	color: #56ecf8;
+}
+
+.header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url('../images/footer.png') repeat fixed;
+	height: 300px;
+}
+
+.header h1{
+	color: white;
+}
+
+.logo-mentions{
+	margin-top: 50px;
+	width: 25%;
+}
+
+
+
+.accueil a:hover{
+	color: #e53775;
+}
+
+@media screen and (max-width: 760px) {
+	.header h1, h3 {
+		font-size: 20px;
+	}
+}
+ 
+@media screen and (max-width: 760px) {
+	.adress p {
+		font-size:11px;
+	}
+}
